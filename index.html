@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://mtsgi.github.io/kitstrap/d/kitstrap.css">
+    <link rel="stylesheet" href="https://mtsgi.github.io/kitstrap/d/kitstrap-font.css">
+    <title>cgssstrparser</title>
+    <style> input{ max-width: 100%; box-sizing: border-box } </style>
+</head>
+<body class="m">
+    <h2>変換するやつ</h2>
+    <div class="p">
+        <span class="kit-badge kit-inblock crimson">オリジナル -> 文字化け</span>
+        <kit-space></kit-space>
+        <input type="text" class="textbox" id="bake">
+        <kit-button class="kit-inblock m" onclick="reverse()">変換</kit-button>
+    </div>
+    <div class="p">
+        <span class="kit-badge kit-inblock green">文字化け -> オリジナル</span>
+        <span class="kit-font-s">※調整中です</span>
+        <kit-space></kit-space>
+        <input type="text" class="textbox" id="orig">
+        <kit-button class="kit-inblock m" onclick="parse()">変換</kit-button>
+    </div>
+    <kit-container>
+        <kit-box class="p">
+            Result: <strong id="result"></strong>
+        </kit-box>
+    </kit-container>
+    <script src="main.js"></script>
+</body>
+</html>
